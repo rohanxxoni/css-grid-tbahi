@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: rgb(164, 196, 166);
+    }
+
+    .main {
+      display: grid;
+      grid-template-rows: 414px 130px 155px 20px;
+      grid-template-columns: 320px 198px 153px 50px;
+      width: 748px;
+      height: 746px;
+      gap: 9px;
+      background-color: rgb(0, 0, 0);
+    }
+
+    .red {
+      background-color: rgb(195, 23, 23);
+      grid-area: 1 / 1 / 2 / 2;
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 30px;
+      color: antiquewhite;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-style: oblique;
+    }
+
+    .blue {
+      background-color: rgb(40, 112, 220);
+      grid-area: 2/4/3/4;
+      border-bottom: 10px solid;
+    }
+
+    .yellow {
+      background-color: rgb(255, 234, 0);
+      grid-area: 4/2/5/3;
+    }
+
+    .black {
+      background-color: rgb(4, 4, 4);
+      grid-area: 4/3/5/4;
+    }
+
+    .grey {
+      background-color: rgb(243, 240, 240);
+    }
+
+    .upper {
+      grid-column-end: 5;
+      grid-column-start: 2;
+    }
+
+    .lower-left {
+      grid-row-end: 4;
+      grid-row-start: 2;
+    }
+
+    .lower-right {
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .bottom-left {
+      grid-row-start: 3;
+      grid-row-end: 5;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div class="red">Redesigned by ROHAN inspired by Mondrian. </div>
+    <div class="yellow"></div>
+    <div class="blue"></div>
+    <div class="black"></div>
+    <div class="grey upper"></div>
+    <div class="grey lower-left"></div>
+    <div class="grey lower-right"></div>
+    <div class="grey bottom-left"></div>
+    <div class="grey bottom-right"></div>
+  </div>
+</body>
+</html>
